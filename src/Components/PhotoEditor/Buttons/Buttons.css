@@ -1,0 +1,22 @@
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.buttons button{
+    color: #fff;
+    padding: 12px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    background-color: #0075ff;
+    margin-bottom: 5rem;
+    border-radius: 20px;
+    border: none;
+
+}
+
+
+  
