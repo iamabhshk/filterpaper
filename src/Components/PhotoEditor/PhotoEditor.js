@@ -1,5 +1,4 @@
 import React, { useState, useRef, Fragment } from 'react';
-// import './App.css';
 import "../../App.css"
 import Canvas from './Canvas/Canvas';
 import UploadImage from './PhotoUpload/PhotoUpload';
@@ -45,6 +44,7 @@ const PhotoEditor = () => {
     context.filter = `saturate(${saturate}%) contrast(${contrast}%) brightness(${brightness}%) sepia(${sepia}%) grayscale(${grayscale}%) blur(${blur}px) hue-rotate(${hueRotate}deg)`;
     context.drawImage(imageRef.current, 0, 0, canvas.width, canvas.height);
     setImageSrc(canvas.toDataURL('image/jpeg'));
+    
   };
 
   const resetFilters = () => {
@@ -57,11 +57,9 @@ const PhotoEditor = () => {
       setBlur(0);
       setHueRotate(0);
       applyFilters();
-      
     } catch (error) {
       alert("The file is empty");
     }
-    
   };
 
   const handleDownload = () => {

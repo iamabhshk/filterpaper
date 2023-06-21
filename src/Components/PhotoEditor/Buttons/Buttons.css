@@ -1,7 +1,11 @@
 .buttons{
     display: flex;
     justify-content: space-around;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    align-items: center;
+    row-gap: 2rem;
+    width: 100%;
+    
 }
 
 .buttons button{
@@ -12,11 +16,46 @@
     align-items: center;
     cursor: pointer;
     background-color: #0075ff;
-    margin-bottom: 5rem;
     border-radius: 20px;
     border: none;
-
 }
 
-
+@media screen and (max-width: 480px) {
+    .buttons {
+      margin-top: 1rem;
+    }
   
+    .buttons button {
+      padding: 10px 20px;
+      margin-top: 0.5rem;
+      width: 100%;
+    }
+  }
+
+
+.upload2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 2rem;
+}
+
+.upload2 input {
+    display: none;
+}
+  
+.upload2 label {
+    color: #fff;
+    padding: 8px 20px;
+    cursor: pointer;
+    background-color: #0075ff;
+    border-radius: 20px;
+}
+
+.MainButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    width: auto;
+}  
